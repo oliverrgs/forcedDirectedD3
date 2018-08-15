@@ -23,7 +23,10 @@ function emailToFields(email){
 	}
 	return {"from": from, "to": to} 
 }
+var doOnce = false;
 function DoD3(name){
+	if(doOnce)return;
+	doOnce = true;
 var filename = "small.json";
 if(name == "jane@a.com"){
 	filename = "emails.json";

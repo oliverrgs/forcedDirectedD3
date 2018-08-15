@@ -11521,7 +11521,6 @@ var html = type$1("text/html", function(xhr) {
 });
 
 var json = type$1("application/json", function(xhr) {
-	console.log("STARTING PARSE");
   return JSON.parse(xhr.responseText);
 });
 
